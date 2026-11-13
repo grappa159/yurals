@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Юралс — ресторан уральской кухни в Перми</title>
+  <meta name="description" content="Юралс — ресторан уральской кухни на Попова, 9. Продукты Прикамья, индустриальный интерьер, живая музыка и джаз по четвергам. Бронирование и банкеты.">
+  <!-- Демо-версия: не индексировать до согласования с владельцем -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b0b0a">
+  <meta property="og:title" content="Юралс — ресторан уральской кухни в Перми">
+  <meta property="og:description" content="Продукты Прикамья, живая музыка и джаз по четвергам.">
+  <meta property="og:image" content="img/hero.jpg">
+  <link rel="icon" href="img/logo-gold.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__row">
+    <a href="#top" class="brand" aria-label="Юралс — на главную">
+      <img src="img/logo-gold.png" alt="" width="26" height="35">
+      <span>Юралс</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="#story">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#music">Музыка</a>
+      <a href="#events">Банкеты</a>
+      <a href="#gallery">Интерьер</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+79922064047" class="nav__phone">+7 (992) 206-40-47</a>
+    </nav>
+    <a href="tel:+79922064047" class="header__phone">+7 (992) 206-40-47</a>
+    <button class="btn btn--gold btn--sm header__cta" data-book>Забронировать</button>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero__bg" src="img/hero.jpg" alt="Филе-миньон с фуа-гра — блюдо «Провокация»">
+    <div class="hero__shade"></div>
+    <div class="container hero__content">
+      <p class="label">Ресторан уральской кухни · Пермь</p>
+      <h1 class="hero__title">Юралс</h1>
+      <p class="hero__lead">Прикамье на тарелке: оханская оленина, прикамский судак, бардымский картофель и ягоды Пермского сбора в индустриальном интерьере с живыми цветами и живой музыкой.</p>
+      <div class="hero__actions">
+        <button class="btn btn--gold" data-book>Забронировать стол</button>
+        <a class="btn btn--line" href="#menu">Смотреть меню</a>
+      </div>
+    </div>
+    <div class="hero__bar">
+      <div class="container hero__bar-row">
+        <div><b>5,0</b><span>929 оценок на Яндекс Картах</span></div>
+        <div><b>Чт</b><span>джаз-бэнд вживую</span></div>
+        <div><b>с 11:00</b><span>завтраки и ланчи</span></div>
+        <div><b id="openNow">—</b><span id="openNowText">ул. Попова, 9</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="section story" id="story">
+    <div class="container story__grid">
+      <div class="story__text">
+        <p class="label label--num"><i>01</i> О ресторане</p>
+        <h2 class="h2">Нефть, сталь <em>и живые цветы</em></h2>
+        <p class="lead">Юралс оформлен в индустриальном «нефтяном» стиле: тёмный металл, мягкий приглушённый свет, глубокие кресла и много живой зелени. Гости часто пишут, что запах цветов чувствуется с порога.</p>
+        <p>В меню уральская кухня, переосмысленная по-ресторанному: посикунчики с прикамским судаком, борщ «Краснокамск», уха «Еловская рыбка» из трёх видов рыбы, пельмени из судака и медовик из Уинского. Хлеб и масло здесь делают сами.</p>
+        <div class="stats">
+          <div><b>99%</b><span>хвалят атмосферу</span></div>
+          <div><b>98%</b><span>хвалят интерьер</span></div>
+          <div><b>99%</b><span>хвалят живую музыку</span></div>
+        </div>
+      </div>
+      <div class="story__media">
+        <img src="img/hall-day.jpg" alt="Зал ресторана днём" loading="lazy" class="story__p1">
+        <img src="img/d-marka-v.jpg" alt="Картофель с икрой палтуса — «Марка Юралс»" loading="lazy" class="story__p2">
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNATURE -->
+  <section class="section signature" id="signature">
+    <div class="container">
+      <div class="head">
+        <p class="label label--num"><i>02</i> Фирменные блюда</p>
+        <h2 class="h2">То, ради чего <em>возвращаются</em></h2>
+      </div>
+      <div class="sig">
+        <article class="sig__card sig__card--tall">
+          <img src="img/d-marka-v.jpg" alt="Картофель с икрой палтуса" loading="lazy">
+          <div class="sig__body">
+            <span class="sig__tag">Горячие закуски</span>
+            <h3>Марка Юралс</h3>
+            <p>Картофель с икрой палтуса и сусальным золотом</p>
+            <b>770 ₽</b>
+          </div>
+        </article>
+        <article class="sig__card">
+          <img src="img/hero.jpg" alt="Филе-миньон с фуа-гра" loading="lazy">
+          <div class="sig__body">
+            <span class="sig__tag">Мясо</span>
+            <h3>Провокация</h3>
+            <p>Филе-миньон с фуа-гра, 270 г</p>
+            <b>1 750 ₽</b>
+          </div>
+        </article>
+        <ul class="sig__list">
+          <li><span>Краб из Пермского моря<small>краб с бардымским картофелем</small></span><b>1 250 ₽</b></li>
+          <li><span>Дорогой гад<small>осьминог с соусом беарнез</small></span><b>1 840 ₽</b></li>
+          <li><span>Пермское море<small>сливочный суп с крабом</small></span><b>1 350 ₽</b></li>
+          <li><span>Тартар из Оханской оленины<small>150 г</small></span><b>1 100 ₽</b></li>
+          <li><span>Утка по-куедински<small>утка с тыквой и соусом барбекю</small></span><b>1 100 ₽</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEOGRAPHY -->
+  <section class="section geo">
+    <div class="container">
+      <div class="head head--center">
+        <p class="label label--num"><i>03</i> География меню</p>
+        <h2 class="h2">Карта Прикамья <em>в одном меню</em></h2>
+        <p class="muted">Каждое название отсылает к месту, откуда пришёл вкус.</p>
+      </div>
+      <ul class="geo__list" id="geoList"></ul>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="head">
+        <p class="label label--num"><i>04</i> Меню</p>
+        <h2 class="h2">Меню <em>ресторана</em></h2>
+        <p class="muted">Цены в рублях. Актуальное меню и сезонные позиции уточняйте у официанта.</p>
+      </div>
+      <div class="tabs" id="menuTabs" role="tablist"></div>
+      <div class="menu__list" id="menuList"></div>
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section class="section music" id="music">
+    <div class="container music__grid">
+      <div class="music__media">
+        <img src="img/jazz.jpg" alt="Джаз-бэнд в Юралс" loading="lazy" class="music__p1">
+        <img src="img/band.jpg" alt="Контрабас и саксофон на сцене" loading="lazy" class="music__p2">
+      </div>
+      <div>
+        <p class="label label--num"><i>05</i> Живая музыка</p>
+        <h2 class="h2">По четвергам <em>джаз</em></h2>
+        <p class="lead">В Юралс играет живая музыка, а по четвергам на сцену выходит джаз-бэнд: рояль, контрабас, саксофон и вокал.</p>
+        <p>В зале несколько экранов, там же показывают спортивные трансляции. На сцене и с экранами удобно проводить презентации, вечеринки и закрытые мероприятия.</p>
+        <button class="btn btn--gold" data-book="Хочу забронировать стол на джазовый вечер в четверг">Стол на джазовый вечер</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- COCKTAILS -->
+  <section class="section bar">
+    <div class="container bar__grid">
+      <div>
+        <p class="label label--num"><i>06</i> Бар</p>
+        <h2 class="h2">Коктейли <em>с октановым числом</em></h2>
+        <p class="lead">Фирменная барная карта в нефтяной теме: «Баррель», «АИ-95», «Керн» и «Игристый флюид».</p>
+        <ul class="price-list" id="cocktailList"></ul>
+      </div>
+      <div class="bar__media">
+        <img src="img/c-cocktail.jpg" alt="Фирменный коктейль" loading="lazy">
+        <img src="img/c-flower.jpg" alt="Коктейль с цветами" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="section events" id="events">
+    <img class="events__bg" src="img/banquet.jpg" alt="" loading="lazy">
+    <div class="container events__grid">
+      <div>
+        <p class="label label--num"><i>07</i> Банкеты и события</p>
+        <h2 class="h2">Свадьбы, корпоративы <em>и дни рождения</em></h2>
+        <p class="lead">Банкетная рассадка, отдельный зал для частных ужинов, сцена с роялем и экраны для презентаций.</p>
+        <ul class="tags">
+          <li>Свадьба</li><li>Корпоратив</li><li>Банкет</li><li>День рождения</li><li>Деловая встреча</li><li>Семейный ужин</li>
+        </ul>
+        <div class="events__thumbs">
+          <img src="img/banquet-round.jpg" alt="Банкетный стол" loading="lazy">
+          <img src="img/private.jpg" alt="Отдельный зал" loading="lazy">
+          <img src="img/banquet-night.jpg" alt="Вечерний банкет" loading="lazy">
+        </div>
+      </div>
+      <form class="panel form" id="eventForm">
+        <p class="label">Заявка</p>
+        <h3>Обсудить мероприятие</h3>
+        <label>Имя<input name="name" required autocomplete="given-name"></label>
+        <label>Телефон<input name="phone" type="tel" required autocomplete="tel" placeholder="+7"></label>
+        <div class="form__row">
+          <label>Дата<input name="date" type="date" required></label>
+          <label>Гостей<input name="guests" type="number" min="5" max="300" value="20" required></label>
+        </div>
+        <label>Формат
+          <select name="type"><option>Свадьба</option><option>Корпоратив</option><option>Банкет</option><option>День рождения</option><option>Деловая встреча</option><option>Другое</option></select>
+        </label>
+        <button class="btn btn--gold btn--full" type="submit">Отправить заявку</button>
+        <p class="form__note">Заявка откроется в WhatsApp с готовым текстом. Или позвоните: <a href="tel:+79922064047">+7 (992) 206-40-47</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="head head--split">
+        <div>
+          <p class="label label--num"><i>08</i> Интерьер</p>
+          <h2 class="h2">Индустриальный стиль <em>и живые цветы</em></h2>
+        </div>
+        <p class="muted">Листайте вбок → нажмите на фото, чтобы открыть крупно.</p>
+      </div>
+    </div>
+    <div class="strip" id="strip">
+      <img src="img/hall-green.jpg" alt="Зал с зеленью" loading="lazy">
+      <img src="img/arch.jpg" alt="Арка из камня" loading="lazy">
+      <img src="img/facade.jpg" alt="Вход в ресторан" loading="lazy">
+      <img src="img/lounge.jpg" alt="Лаунж с креслами" loading="lazy">
+      <img src="img/hall-wide.jpg" alt="Основной зал" loading="lazy">
+      <img src="img/d-pear.jpg" alt="Десерт" loading="lazy">
+      <img src="img/lounge-clock.jpg" alt="Лаунж-зона с часами" loading="lazy">
+      <img src="img/hall-long.jpg" alt="Длинный зал" loading="lazy">
+      <img src="img/d-shrimp.jpg" alt="Салат с креветками" loading="lazy">
+      <img src="img/hall.jpg" alt="Зал вечером" loading="lazy">
+      <img src="img/stage.jpg" alt="Сцена" loading="lazy">
+      <img src="img/d-tart.jpg" alt="Ягодный десерт" loading="lazy">
+    </div>
+  </section>
+
+  <!-- GIFT -->
+  <section class="gift">
+    <div class="container gift__row">
+      <img src="img/logo-gold.png" alt="" width="46" height="62">
+      <div>
+        <h3>Подарочный сертификат</h3>
+        <p>Ужин в Юралс в подарок. Номинал и оформление уточняйте у администратора.</p>
+      </div>
+      <a class="btn btn--line" href="tel:+79922064047">Заказать по телефону</a>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews">
+    <div class="container">
+      <div class="head head--center">
+        <p class="label label--num"><i>09</i> Отзывы</p>
+        <h2 class="h2">5,0 <em>из 929 оценок</em></h2>
+      </div>
+      <div class="reviews__grid">
+        <blockquote><p>«Внутри везде стоят живые цветы, и запах прямо чувствуется! На летнике сидеть сплошное удовольствие»</p><cite>Инна · Яндекс Карты</cite></blockquote>
+        <blockquote><p>«Порции щедрые, а подача эстетичная. Хочется приходить сюда снова, чтобы открывать что-то новое»</p><cite>Мария · Яндекс Карты</cite></blockquote>
+        <blockquote><p>«Ланч вкусный! Расстегай с рыбой к ухе — отдельное удовольствие»</p><cite>Инна · Яндекс Карты</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="section contacts" id="contacts">
+    <div class="container contacts__grid">
+      <div>
+        <p class="label label--num"><i>10</i> Контакты</p>
+        <h2 class="h2">Ждём <em>в гости</em></h2>
+        <dl class="info">
+          <dt>Адрес</dt><dd>Пермь, ул. Попова, 9</dd>
+          <dt>Телефон</dt><dd><a href="tel:+79922064047">+7 (992) 206-40-47</a></dd>
+          <dt>Часы</dt><dd id="hoursList"></dd>
+          <dt>Средний чек</dt><dd>1 000–2 500 ₽</dd>
+          <dt>Удобства</dt><dd>Парковка, Wi-Fi, оплата картой и СБП, можно с собакой до 35 см, кофе и еда навынос</dd>
+        </dl>
+        <div class="socials">
+          <a class="btn btn--line btn--sm" href="https://t.me/urals_rest" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn btn--line btn--sm" href="https://vk.ru/urals_restaurant" target="_blank" rel="noopener">ВКонтакте</a>
+        </div>
+      </div>
+      <div class="map">
+        <a href="https://yandex.ru/maps/org/yurals/133804567373/" target="_blank" rel="noopener" aria-label="Открыть Юралс на Яндекс Картах">
+          <img src="img/map.png" alt="Юралс на карте: ул. Попова, 9" width="650" height="450" loading="lazy">
+          <span class="map__pin" aria-hidden="true"><img src="img/logo-gold.png" alt=""></span>
+        </a>
+        <div class="map__actions">
+          <a class="btn btn--gold btn--sm" href="https://yandex.ru/maps/?rtext=~58.012755%2C56.223617&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a>
+          <a class="btn btn--dark btn--sm" href="https://yandex.ru/maps/org/yurals/133804567373/" target="_blank" rel="noopener">Яндекс Карты</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__row">
+    <a href="#top" class="brand"><img src="img/logo-gold.png" alt="" width="22" height="30"><span>Юралс</span></a>
+    <p>© 2026 Юралс · ресторан уральской кухни · Пермь, ул. Попова, 9</p>
+    <button class="btn btn--gold btn--sm" data-book>Забронировать</button>
+  </div>
+</footer>
+
+<!-- Демо-плашка разработчика (убрать после согласования) -->
+<div class="demo-badge" id="demoBadge">
+  <span>Демо-версия сайта</span>
+  <a id="devLink" target="_blank" rel="noopener"></a>
+  <button aria-label="Скрыть" id="demoClose">×</button>
+</div>
+
+<!-- BOOKING -->
+<dialog class="modal" id="bookModal">
+  <form class="form" id="bookForm" method="dialog">
+    <button class="modal__close" value="cancel" formnovalidate aria-label="Закрыть">×</button>
+    <p class="label">Бронирование</p>
+    <h3>Забронировать стол</h3>
+    <label>Имя<input name="name" required autocomplete="given-name"></label>
+    <label>Телефон<input name="phone" type="tel" required autocomplete="tel" placeholder="+7"></label>
+    <div class="form__row">
+      <label>Дата<input name="date" type="date" required></label>
+      <label>Время<input name="time" type="time" value="19:00" required></label>
+    </div>
+    <label>Гостей<input name="guests" type="number" min="1" max="40" value="2" required></label>
+    <label>Пожелания<input name="comment" placeholder="Например, ближе к сцене"></label>
+    <button class="btn btn--gold btn--full" type="submit" value="ok">Отправить</button>
+    <p class="form__note">Откроется WhatsApp с готовым сообщением. Или позвоните: <a href="tel:+79922064047">+7 (992) 206-40-47</a></p>
+  </form>
+</dialog>
+
+<div class="lightbox" id="lightbox" hidden><img alt=""><button aria-label="Закрыть">×</button></div>
+
+<script src="app.js"></script>
+</body>
+</html>
